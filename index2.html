@@ -1,52 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Beranda</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css", href= "css/bootstrap-grid.rtl.css">
+    <title>Azz &mdash; Tentang Saya</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-                <img src="myasset/per.jpg" alt="Logo" width="50" height="50" class="rounded-circle">
-                <span class="fw-bold">Azz</span>
+<body class="bg-body">
+
+    <nav class="navbar navbar-expand-lg bg-warning border-bottom border-dark border-2 shadow-sm">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2 py-2">
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-dark text-decoration-none m-0" href="index.html">
+                <span class="fw-semibold">Portofolio</span></span>
             </a>
-            <ul class="navbar-nav d-flex flex-row gap-2 m-0 rounded-pill">
-                <li class="nav-item">
-                    <a href="index.html" class="btn btn-dark text-light fw-bold border-light">Beranda</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index2.html" class="btn btn-dark text-light fw-bold border-light">Tentang</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index3.html" class="btn btn-dark text-light fw-bold border-light">Karya</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index4.html" class="btn btn-dark text-light fw-bold border-light">Hobi</a>
-                </li>
+            <ul class="d-flex flex-row flex-wrap gap-2 m-0 p-0 list-unstyled">
+                <li><a href="index.html" class="btn btn-outline-dark fw-semibold rounded-pill px-3 text-dark bg-light">Beranda</a></li>
+                <li><a href="index2.html" class="btn btn-dark fw-semibold rounded-pill px-3 active" aria-current="page">Tentang</a></li>
+                <li><a href="index3.html" class="btn btn-outline-dark fw-semibold rounded-pill px-3 text-dark bg-light">Karya</a></li>
+                <li><a href="index4.html" class="btn btn-outline-dark fw-semibold rounded-pill px-3 text-dark bg-light">Hobi</a></li>
             </ul>
         </div>
     </nav>
 
-<section class= "hero-section bg-secondary min-vh-100 d-flex justify-content-center align-items-center p-5">
-    <div class="card-hero text-start position-relative text-white bg-secondary p-5 p-md-5 rounded-4 position-relative border-dark">
-        <h1 class="display-4 text-uppercase text-light">Selamat datang di website saya</h1>
-        <p class="text-dark display-7 text-light">Di buat sepenuh hati memikirkan desain setengah mati full pembuatan mandiri menggunakan metode bootstrap <a class="link" href="https://www.w3schools.com/bootstrap5/index.php">w3schools </a></p>
-    </div>
-</section>
-
-    <section class="card bg">
-        <div class="card-body bg-secondary">
-            <ul class="card-group">
-                <li><h3>selamat datang</h3></li>
-            </ul>
-
+    <section class="bg-warning-subtle py-5">
+        <div class="container">
+            <h1 class="display-6 fw-bold text-dark mb-0">Tentang Saya</h1>
         </div>
     </section>
 
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-body p-4 text-center">
+                            <img src="myasset/per.jpg" alt="gw nih boss" width="170" height="170" class="rounded-circle border border-dark border-2 mb-3">
+                            <h2 class="h5 fw-bold mb-1">Azz</h2>
+                            <p class="text-secondary mb-3">Mahasiswa Semester 3</p>
+                            <ul class="list-group list-group-flush text-start rounded-4">
+                                <li class="list-group-item d-flex justify-content-between gap-3">
+                                    <span class="text-secondary">Domisili</span>
+                                    <span class="fw-semibold text-end">Banyumas</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between gap-3">
+                                    <span class="text-secondary">Universitas</span>
+                                    <span class="fw-semibold text-end">UMPRI</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between gap-3">
+                                    <span class="text-secondary">Mata Kuliah</span>
+                                    <span class="fw-semibold text-end">Desain Web</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between gap-3">
+                                    <span class="text-secondary">Status</span>
+                                    <span class="badge bg-success rounded-pill align-self-center">Aktif</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="card border-0 shadow-sm rounded-4 h-100">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="h4 fw-bold mb-3">Profil</h2>
+                            <p class="text-secondary">Saya seorang mahasiswa yang sedang belajar cara menggunakan agent dengan output sebaik mungkin dan keamanan yang terjaga dengan baik. Halaman ini dibuat sebagai latihan menggunakan Bootstrap, dimulai dari menyusun navbar, kartu, grid, sampai ke tata letak halaman.</p>
+                            <p class="text-secondary">Semua yang ada di website ini ditulis manual pada file HTML only ga ada Java Script sama sekali, tampilan penuhnya mengandalkan CSS bawaan Bootstrap.</p>
+                            <h3 class="h5 fw-bold mt-4 mb-3">Yang Saya Sukai</h3>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-warning text-dark rounded-pill px-3 py-2">Belajar Coding</span>
+                                <span class="badge bg-info text-dark rounded-pill px-3 py-2">Monitoring Website</span>
+                                <span class="badge bg-success rounded-pill px-3 py-2">Gaming</span>
+                                <span class="badge bg-danger rounded-pill px-3 py-2">Buat Bot Otomisasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-body-tertiary">
+        <div class="container">
+            <h2 class="h3 fw-bold text-center mb-1">Keahlian</h2>
+            <p class="text-secondary text-center mb-4">Perkiraan penguasaan yang sudah dipelajari.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex justify-content-between mb-1"><span>HTML</span><span class="fw-semibold">Mahir</span></div>
+                    <div class="progress mb-4" role="progressbar">
+                        <div class="progress-bar bg-warning w-100" aria-label="HTML"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-1"><span>CSS</span><span class="fw-semibold">Baik</span></div>
+                    <div class="progress mb-4" role="progressbar">
+                        <div class="progress-bar bg-info w-75" aria-label="CSS"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-1"><span>Bootstrap</span><span class="fw-semibold">Cukup</span></div>
+                    <div class="progress mb-4" role="progressbar">
+                        <div class="progress-bar bg-success w-50" aria-label="Bootstrap"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-1"><span>JavaScript</span><span class="fw-semibold">Pemula</span></div>
+                    <div class="progress mb-4" role="progressbar">
+                        <div class="progress-bar bg-danger w-25" aria-label="JavaScript"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-1"><span>Database</span><span class="fw-semibold">Pemula</span></div>
+                    <div class="progress" role="progressbar">
+                        <div class="progress-bar bg-dark w-25" aria-label="Database"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-info text-dark text-center py-4 border-top border-dark border-2">
+        <div class="container">
+            <p class="mb-1 fw-semibold">Azz Portofolio</p>
+            <p class="mb-0 small">Halaman Tentang &middot; Bootstrap 5 murni tanpa JavaScript</p>
+        </div>
+    </footer>
 
 </body>
 </html>
